@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TEKUP_Trainning.MainPage">
+    <ContentPage.Content>
+        <!--<StackLayout VerticalOptions="Center"
+                     HorizontalOptions="Center">
+            --><!--<Button Text="Click Me!" Clicked="Button_OnClicked"/>--><!--
+            
+           
+        </StackLayout>-->
+        <StackLayout VerticalOptions="Center" HorizontalOptions="Center" BindingContext="{x:Reference MySlider}">
+            <BoxView Color="Blue" Opacity="{Binding  Value}" ></BoxView>
+            <Label BindingContext="{x:Reference MySlider1}" Opacity="{Binding Source={x:Reference MySlider}, Path=Value}"  
+                Text="{Binding Path = Value, StringFormat='Value is {0:F2}'}"></Label>
+            <Slider x:Name="MySlider"                    ></Slider>
+            <Slider x:Name="MySlider1"                    ></Slider>
+        </StackLayout>
+        <!--<StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+            <Label x:Name="MyLabel" Text="Hello"></Label>
+            <Slider x:Name="MySlider" ValueChanged="Slider_OnValueChanged"
+                   Maximum="20"  Minimum="10" ></Slider>
+        </StackLayout>-->
+    </ContentPage.Content>
+</ContentPage>

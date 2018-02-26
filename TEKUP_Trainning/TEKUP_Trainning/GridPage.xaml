@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TEKUP_Trainning.GridPage">
+    <ContentPage.Content>
+        <Grid BackgroundColor="Yellow" ColumnSpacing="20" RowSpacing="40">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="20"></ColumnDefinition>
+                <ColumnDefinition Width="2*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+            </Grid.RowDefinitions>
+            
+            <Label Text="Column 0 line 0" Grid.Row="0" Grid.Column="0" BackgroundColor="Aqua"></Label>
+            <Label Text="Column 0 line 1" Grid.Row="1" Grid.Column="0" BackgroundColor="Green"></Label>
+            <Label Text="Column 1 line 0" Grid.Row="0" Grid.Column="1" BackgroundColor="Red"></Label>
+            <Label Text="Column 1 line 1" Grid.Row="1" Grid.Column="1" BackgroundColor="BlueViolet"></Label>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

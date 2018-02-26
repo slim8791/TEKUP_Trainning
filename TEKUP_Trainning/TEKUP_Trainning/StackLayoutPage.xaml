@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TEKUP_Trainning.StackLayoutPage"
+             BackgroundColor="#127ac7">
+    <ContentPage.Content>
+        <StackLayout  Orientation="Vertical" Padding="15,0,20,25" VerticalOptions="Center" Spacing="20">
+            <Label Text="Authentication"
+                   TextColor="White"
+                   FontSize="30"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"></Label>
+            <Label Text="Welcome to Xamarin.Forms!"
+               TextColor="White"
+                   FontSize="18"/>
+            
+            <Entry Placeholder="Put your Login"
+                   BackgroundColor="White"></Entry>
+            
+            <Entry Placeholder="Put your password"
+                   IsPassword="True"
+                   BackgroundColor="White"
+                   ></Entry>
+            
+            <Button Text="Login"
+                    TextColor="White"
+                    BackgroundColor="#1dabf0"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
