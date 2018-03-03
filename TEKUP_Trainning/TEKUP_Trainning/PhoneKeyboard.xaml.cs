@@ -10,18 +10,17 @@ using Xamarin.Forms.Xaml;
 namespace TEKUP_Trainning
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class StackLayoutPage : ContentPage
+    public partial class PhoneKeyboard : ContentPage
     {
-        public StackLayoutPage()
+        public PhoneKeyboard()
         {
             InitializeComponent();
         }
 
         private void Button_OnClicked(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new SecondPage());
-            //Navigation.PushModalAsync(new SecondPage());
-
+            var btn = (Button) sender;
+            Number.Text = Number.Text + btn.Text;
         }
     }
 }

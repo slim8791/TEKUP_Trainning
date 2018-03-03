@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TEKUP_Trainning.ListPage"
+             Title="Liste des personnes ">
+    <ContentPage.Content>
+        <StackLayout>
+            <SearchBar x:Name="MySearchBar"  TextChanged="MySearchBar_OnTextChanged"></SearchBar>
+            <ListView x:Name="Persons"
+                      >
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                         <Grid>
+                             <Grid.ColumnDefinitions>
+                                 <ColumnDefinition Width="*"></ColumnDefinition>
+                                   <ColumnDefinition Width="*"></ColumnDefinition>
+                                </Grid.ColumnDefinitions>
+                                <Label Text="{Binding Name}" Grid.Column="0" Grid.Row="0"></Label>
+                                <Label Text="{Binding LastName}" Grid.Column="1" Grid.Row="0"></Label>
+
+                            </Grid> 
+                            <ViewCell.ContextActions>
+                                <MenuItem Text="Show"
+                                          CommandParameter="{Binding .}"
+                                          Clicked="MenuItem_OnClicked"></MenuItem>
+                                <MenuItem Text="Delete"
+                                          CommandParameter="{Binding .}"
+                                          Clicked="MenuItemDelete_OnClicked"></MenuItem>
+                            </ViewCell.ContextActions>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

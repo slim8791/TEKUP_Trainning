@@ -10,18 +10,19 @@ using Xamarin.Forms.Xaml;
 namespace TEKUP_Trainning
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class StackLayoutPage : ContentPage
+    public partial class SecondPage : ContentPage
     {
-        public StackLayoutPage()
+        public SecondPage()
         {
             InitializeComponent();
         }
 
         private void Button_OnClicked(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new SecondPage());
-            //Navigation.PushModalAsync(new SecondPage());
+            Navigation.PopAsync();
 
+            //Navigation.PopModalAsync();
+            //Navigation.PushAsync(new StackLayoutPage());
         }
     }
 }

@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TEKUP_Trainning.PhoneKeyboard"
+             BackgroundColor="#354242">
+    <ContentPage.Content>
+       
+        <Grid RowSpacing="10" ColumnSpacing="10" Padding="40">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="2*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Label x:Name="Number" Grid.Row="0" Grid.ColumnSpan="3" FontSize="40" TextColor="White"></Label>
+            
+            <Button BorderRadius="30" Grid.Row="1" Grid.Column="0" Text="1" TextColor="#28282c" BackgroundColor="#fff" Clicked="Button_OnClicked"></Button>
+
+            <Button BorderRadius="30" Grid.Row="1" Grid.Column="1" Text="2" TextColor="#28282c" BackgroundColor="#fff" Clicked="Button_OnClicked"></Button>
+
+            <Button BorderRadius="30" Grid.Row="1" Grid.Column="2" Text="3" TextColor="#28282c" BackgroundColor="#fff" Clicked="Button_OnClicked"></Button>
+
+            <Button BorderRadius="30" Grid.Row="2" Grid.Column="0" Text="4" TextColor="#28282c" BackgroundColor="#fff" Clicked="Button_OnClicked"></Button>
+
+            <Button BorderRadius="30" Grid.Row="2" Grid.Column="1" Text="5" TextColor="#28282c" BackgroundColor="#fff" Clicked="Button_OnClicked"></Button>
+
+            <Button BorderRadius="30" Grid.Row="2" Grid.Column="2" Text="6" TextColor="#28282c" BackgroundColor="#fff" Clicked="Button_OnClicked"></Button>
+
+
+            <Button BorderRadius="30" Grid.Row="3" Grid.Column="0" Text="7" TextColor="#28282c" BackgroundColor="#fff" Clicked="Button_OnClicked"></Button>
+
+            <Button BorderRadius="30" Grid.Row="3" Grid.Column="1" Text="8" TextColor="#28282c" BackgroundColor="#fff" Clicked="Button_OnClicked"></Button>
+
+            <Button BorderRadius="30" Grid.Row="3" Grid.Column="2" Text="9" TextColor="#28282c" BackgroundColor="#fff" Clicked="Button_OnClicked"></Button>
+
+            <Button BorderRadius="30" Grid.Row="4" Grid.Column="0" Text="*" TextColor="#28282c" BackgroundColor="#fff" Clicked="Button_OnClicked"></Button>
+
+            <Button BorderRadius="30" Grid.Row="4" Grid.Column="1" Text="0" TextColor="#28282c" BackgroundColor="#fff" Clicked="Button_OnClicked"></Button>
+
+            <Button BorderRadius="30" Grid.Row="4" Grid.Column="2" Text="#" TextColor="#28282c" BackgroundColor="#fff" Clicked="Button_OnClicked"></Button>
+
+
+            <Button BorderRadius="30" Grid.Row="5" Grid.Column="0"  Grid.ColumnSpan="3" Text="Call" TextColor="#fff" BackgroundColor="#96ca2d" ></Button>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

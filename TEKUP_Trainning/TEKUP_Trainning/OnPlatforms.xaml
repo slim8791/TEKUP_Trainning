@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:system="clr-namespace:System;assembly=System.Runtime"
+             x:Class="TEKUP_Trainning.OnPlatforms">
+    <!--<ContentPage.BackgroundColor>
+        <OnPlatform x:TypeArguments="Color"
+                    Android="DarkGreen"
+                    WinPhone="DeepSkyBlue"
+                    iOS="Red"></OnPlatform>
+    </ContentPage.BackgroundColor>-->
+    <ContentPage.Content>
+        <StackLayout>
+            <!--<Label
+                
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" >
+                <Label.Text>
+                    <OnPlatform x:TypeArguments="x:String"
+                    Android="Hello from Android "
+                    WinPhone="Hello from Windows "
+                    iOS="Hello from iOS "></OnPlatform>
+                </Label.Text>
+            </Label>-->
+            <!--<Slider Maximum="30" Minimum="16"></Slider>-->
+            <!--<StackLayout Orientation="Horizontal">-->
+                <!--<Stepper x:Name="MyStepper" Increment="5" Maximum="150" Minimum="90"></Stepper>-->
+                <!--<Label Text="{Binding Source={x:Reference MyStepper}, Path=Value}"></Label>-->
+                <!--<Switch IsToggled="False" Toggled="Switch_OnToggled"></Switch>-->
+                <!--<Switch IsToggled="False" x:Name="MySwitch"></Switch>
+                <Label Text="{Binding Source={x:Reference MySwitch},Path= IsToggled}"></Label>-->
+                
+                <!--<Entry x:Name="MyEntry" Placeholder="This is an entry"
+                        Completed="Entry_OnCompleted"
+                       TextChanged="MyEntry_OnTextChanged"></Entry>--> 
+                <!--<Label x:Name="MySecond"></Label>-->
+                <!--<Entry Placeholder="This is an entry"
+                       Keyboard="Email"></Entry>-->
+                <!--<Entry Placeholder="This is an entry" IsPassword="True"
+                       Keyboard="Numeric"></Entry>-->
+                <!--<Editor BackgroundColor="Cyan" VerticalOptions="FillAndExpand"></Editor>-->
+            <!--</StackLayout>-->
+            <!--<Picker x:Name="MyPicker" SelectedIndexChanged="Picker_OnSelectedIndexChanged" >
+                <Picker.Items>
+                    <x:String> Item number 1</x:String>
+                    <x:String> Item number 2</x:String>
+                    <x:String> Item number 3</x:String>
+                    <x:String> Item number 4</x:String>
+                </Picker.Items>
+            </Picker>-->
+            <!--<DatePicker  MaximumDate="{x:Static system:DateTime.Today}" Date="15 Mar 2018" Format="dd-MMMMMM-yyyy" DateSelected="DatePicker_OnDateSelected"></DatePicker>-->
+            <!--<TimePicker ></TimePicker>-->
+            
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TEKUP_Trainning.Tabbed"
+            xmlns:local="clr-namespace:TEKUP_Trainning;assembly=TEKUP_Trainning"
+            Title="Tabbed Page">
+   
+    <TabbedPage.Children>
+        <ContentPage Title="Page 1">
+            <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+                <Label Text="Page 1"></Label>
+            </StackLayout>
+        </ContentPage>
+        <ContentPage Title="Page 2">
+            <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+                <Label Text="Page 2"></Label>
+            </StackLayout>
+        </ContentPage>
+        <ContentPage Title="Page 3">
+            <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+                <Label Text="Page 3"></Label>
+            </StackLayout>
+        </ContentPage>
+      <local:AbsolutePage></local:AbsolutePage>
+        <local:RelativeLayout></local:RelativeLayout>
+        <local:StackLayoutPage></local:StackLayoutPage>
+    </TabbedPage.Children>
+</TabbedPage>

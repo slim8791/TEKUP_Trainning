@@ -2,7 +2,11 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="TEKUP_Trainning.StackLayoutPage"
-             BackgroundColor="#127ac7">
+             BackgroundColor="#127ac7"
+             Title="Stack layout page"
+             >
+    <NavigationPage.HasNavigationBar>False</NavigationPage.HasNavigationBar>
+
     <ContentPage.Content>
         <StackLayout  Orientation="Vertical" Padding="15,0,20,25" VerticalOptions="Center" Spacing="20">
             <Label Text="Authentication"
@@ -24,7 +28,8 @@
             
             <Button Text="Login"
                     TextColor="White"
-                    BackgroundColor="#1dabf0"></Button>
+                    BackgroundColor="#1dabf0"
+                    Clicked="Button_OnClicked"></Button>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

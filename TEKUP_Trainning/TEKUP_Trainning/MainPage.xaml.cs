@@ -27,5 +27,10 @@ namespace TEKUP_Trainning
         //{
         // //   MyLabel.Text = String.Format("Value is {0}",e.NewValue);
         //}
+        private void Button_OnClicked1(object sender, EventArgs e)
+        {
+
+            Navigation.PopAsync();
+        }
     }
 }

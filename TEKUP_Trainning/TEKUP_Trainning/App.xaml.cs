@@ -13,7 +13,8 @@ namespace TEKUP_Trainning
         {
             InitializeComponent();
 
-            MainPage = new TEKUP_Trainning.RelativeLayout();
+            MainPage = new PhoneKeyboard(); //new NavigationPage(new PhoneKeyboard()); ;
+            ; //new NavigationPage(new Tabbed()); ;
         }
 
         protected override void OnStart()
