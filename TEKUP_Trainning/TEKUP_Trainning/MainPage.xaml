@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" Title="Main page"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             Title="Main page"
              x:Class="TEKUP_Trainning.MainPage" >
     <ContentPage.Padding>
         <OnPlatform x:TypeArguments="Thickness"
@@ -16,20 +17,26 @@
                     iOS="Red"></OnPlatform>
     </ContentPage.BackgroundColor>
     <ContentPage.Content>
-        <!--<StackLayout VerticalOptions="Center"
+        <StackLayout VerticalOptions="Center"
                      HorizontalOptions="Center">
-            --><!--<Button Text="Click Me!" Clicked="Button_OnClicked"/>--><!--
-            
-           
-        </StackLayout>-->
-        <StackLayout VerticalOptions="Center" HorizontalOptions="Center" BindingContext="{x:Reference MySlider}">
+            <Button  Clicked="Button_OnClicked">
+                <Button.Text>
+                    <OnPlatform x:TypeArguments="x:String"
+                    Android="Hello from Android "
+                    WinPhone="Hello from Windows "
+                    iOS="Hello from iOS "></OnPlatform>
+                </Button.Text>
+            </Button>
+    
+        </StackLayout>
+        <!--<StackLayout VerticalOptions="Center" HorizontalOptions="Center" BindingContext="{x:Reference MySlider}">
             <BoxView Color="Blue" Opacity="{Binding  Value}" ></BoxView>
-            <!--<Label BindingContext="{x:Reference MySlider1}" Opacity="{Binding Source={x:Reference MySlider}, Path=Value}"  
+            --><!--<Label BindingContext="{x:Reference MySlider1}" Opacity="{Binding Source={x:Reference MySlider}, Path=Value}"  
                 Text="{Binding Path = Value, StringFormat='Value is {0:F2}'}"></Label>-->
             <!--<Slider x:Name="MySlider"                    ></Slider>
-            <Slider x:Name="MySlider1"                    ></Slider>-->
+            <Slider x:Name="MySlider1"                    ></Slider>--><!--
             <Button Text="Click me" Clicked="Button_OnClicked1"></Button>
-        </StackLayout>
+        </StackLayout>-->
         <!--<StackLayout VerticalOptions="Center" HorizontalOptions="Center">
             <Label x:Name="MyLabel" Text="Hello"></Label>
             <Slider x:Name="MySlider" ValueChanged="Slider_OnValueChanged"

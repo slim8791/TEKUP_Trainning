@@ -2,6 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="TEKUP_Trainning.PhoneKeyboard"
+             Title="Phone "
              BackgroundColor="#354242">
     <ContentPage.Content>
        
@@ -47,7 +48,7 @@
             <Button BorderRadius="30" Grid.Row="4" Grid.Column="2" Text="#" TextColor="#28282c" BackgroundColor="#fff" Clicked="Button_OnClicked"></Button>
 
 
-            <Button BorderRadius="30" Grid.Row="5" Grid.Column="0"  Grid.ColumnSpan="3" Text="Call" TextColor="#fff" BackgroundColor="#96ca2d" ></Button>
+            <Button BorderRadius="30" Grid.Row="5" Grid.Column="0"  Grid.ColumnSpan="3" Text="Call" TextColor="#fff" BackgroundColor="#96ca2d" Clicked="Button_OnClicked1" ></Button>
         </Grid>
     </ContentPage.Content>
 </ContentPage>

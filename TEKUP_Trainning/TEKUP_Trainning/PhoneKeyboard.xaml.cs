@@ -22,5 +22,13 @@ namespace TEKUP_Trainning
             var btn = (Button) sender;
             Number.Text = Number.Text + btn.Text;
         }
+
+        private void Button_OnClicked1(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new StackLayoutPage(),false);
+            //  Navigation.PopModalAsync();
+            //Navigation.PopAsync();
+            //   Navigation.PushAsync(new MainPage());
+        }
     }
 }

@@ -11,7 +11,7 @@
                </StackLayout>
                <ListView x:Name="MenuList"
                          ItemSelected="MenuList_OnItemSelected"
-                         SeparatorVisibility="Default">
+                         SeparatorVisibility="None">
                    <ListView.ItemTemplate>
                        <DataTemplate>
                            <ViewCell>

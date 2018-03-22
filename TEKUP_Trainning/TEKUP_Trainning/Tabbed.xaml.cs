@@ -15,6 +15,7 @@ namespace TEKUP_Trainning
         public Tabbed()
         {
             InitializeComponent();
+
         }
     }
 }

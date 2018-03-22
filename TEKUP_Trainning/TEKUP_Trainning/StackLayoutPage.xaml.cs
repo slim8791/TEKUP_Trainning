@@ -19,7 +19,8 @@ namespace TEKUP_Trainning
 
         private void Button_OnClicked(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new SecondPage());
+            Navigation.PopToRootAsync(true);
+            //Navigation.PushAsync(new SecondPage());
             //Navigation.PushModalAsync(new SecondPage());
 
         }

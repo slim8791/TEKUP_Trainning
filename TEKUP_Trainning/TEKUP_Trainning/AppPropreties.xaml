@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TEKUP_Trainning.AppPropreties">
+    <ContentPage.Content>
+        <TableView>
+            <TableSection>
+                <EntryCell x:Name="MyEntry" Label="To do " Placeholder="Put your data"  Completed="MyEntry_OnCompleted"></EntryCell>
+                <SwitchCell x:Name="MySwitch" OnChanged="MyEntry_OnCompleted"></SwitchCell>
+            </TableSection>
+        </TableView>
+    </ContentPage.Content>
+</ContentPage>

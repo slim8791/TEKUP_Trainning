@@ -19,8 +19,9 @@ namespace TEKUP_Trainning
 
         private void Button_OnClicked(object sender, EventArgs e)
         {
-            DisplayAlert("Alert ! ", "Hello from TEK-UP", "Cancel");
-
+       //     DisplayAlert("Alert ! ", "Hello from TEK-UP", "Cancel");
+            //Navigation.PushAsync(new PhoneKeyboard());
+            Navigation.PushAsync(new PhoneKeyboard(),true);
         }
 
         //private void Slider_OnValueChanged(object sender, ValueChangedEventArgs e)
