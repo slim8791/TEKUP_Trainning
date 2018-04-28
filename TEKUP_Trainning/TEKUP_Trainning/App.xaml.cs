@@ -13,7 +13,7 @@ namespace TEKUP_Trainning
         {
             InitializeComponent();
 
-            MainPage  =/* new NavigationPage(new Tabbed())*/ new NavigationPage(new SqliteDataPage());
+            MainPage  =/* new NavigationPage(new Tabbed())*/ new NavigationPage(new Media());
                 }
 
         protected override void OnStart()

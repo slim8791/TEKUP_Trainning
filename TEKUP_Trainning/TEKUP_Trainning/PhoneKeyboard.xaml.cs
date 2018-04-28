@@ -1,9 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+using Plugin.Messaging;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -25,7 +21,16 @@ namespace TEKUP_Trainning
 
         private void Button_OnClicked1(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new StackLayoutPage(),false);
+
+            //if(MessagingPlugin.PhoneDialer.CanMakePhoneCall)
+            //    MessagingPlugin.PhoneDialer.MakePhoneCall(Number.Text);
+
+            //MessagingPlugin.SmsMessenger.SendSms(Number.Text,"Hello");
+
+            //MessagingPlugin.EmailMessenger.SendEmail();
+
+
+            //Navigation.PushAsync(new StackLayoutPage(),false);
             //  Navigation.PopModalAsync();
             //Navigation.PopAsync();
             //   Navigation.PushAsync(new MainPage());
